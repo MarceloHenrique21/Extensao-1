@@ -1,0 +1,20 @@
+{
+
+    "name": "extensao n1", 
+    "description": "Extensao que salva um site como favorito",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting", "favicon"],
+    "action": {
+        "default_popup": "index.html" },
+
+        "web_accessible_resources": [
+            {
+              "resources": ["_favicon/*"],
+              "matches": ["<all_urls>"],
+              "extension_ids": ["*"]
+            }
+          ]
+     
+
+}
